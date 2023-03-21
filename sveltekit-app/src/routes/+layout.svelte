@@ -1,5 +1,9 @@
 <script>
+	import NavBar from "$lib/components/nav/NavBar.svelte";
   import "../app.css";
 </script>
 
-<slot />
+<div class="w-full">
+  <NavBar/>
+  <slot />
+</div>

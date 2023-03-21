@@ -1,3 +1,21 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'GoudyBookletter1911';
+		src:	local('Goudy Bookletter 1911'), 
+				local('GoudyBookletter1911'), 
+				local('Goudy-Bookletter-1911'), 
+				local('Goudy_Bookletter_1911'), 
+				local('goudy bookletter 1911'), 
+				local('goudybookletter1911'), 
+				local('goudy-bookletter-1911'), 
+				local('goudy_bookletter_1911'), 
+				url('/fonts/GoudyBookletter1911/GoudyBookletter1911.ttf');
+		font-weight: normal;
+		font-display: swap;
+	}
+}
