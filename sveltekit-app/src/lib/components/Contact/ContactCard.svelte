@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Contact } from "$lib/types";
-	import type { DrawParams } from "svelte/types/runtime/transition";
 	import Info from "./Info.svelte";
 	
 	// Props
