@@ -5,7 +5,7 @@
 	
 	// Props
 	export let contact : Contact;
-	let showDetails = true;
+	let showDetails = false;
 
 	const getDefaultField = (contact : Contact) : string => {
 		return (
@@ -15,7 +15,7 @@
 			)
 	}
 </script>
-<div class="w-full border border-slate-200 rounded-md">
+<div class="w-full border border-slate-200 rounded-md transition-all duration-300">
 	<button class="w-full flex items-center justify-between p-4 pl-6 pr-6 overflow-hidden bg-none" 
 		on:click={() => showDetails = !showDetails}>
 		<h2 class="text-2xl">
@@ -23,7 +23,7 @@
 		</h2>
 	</button>
 	{#if showDetails}
-		<main class="w-full flex flex-col gap-2 border-t border-slate-200 p-4">
+		<main class={`w-full flex flex-col gap-2 border-t border-slate-200 p-4`}>
 			{ #each contact.infos as info, i (i) }
 				<Info id={i} length={contact.infos.length} value={Object.values(info)[0]} key={Object.keys(info)[0]} />
 			{/each}

@@ -35,10 +35,11 @@
 	]
 
 </script>
-
-<div class="w-full h-full font-serif p-4 flex flex-col gap-4 overflow-y-auto">
-	{#each contacts as contact (contact.id)}
-		<ContactCard {contact} />
-	{/each}
-</div>
+<main class="w-full flex justify-center">
+	<div class="w-full max-w-screen-lg h-full font-serif p-4 flex flex-col gap-4 overflow-y-auto">
+		{#each contacts as contact (contact.id)}
+			<ContactCard {contact} />
+		{/each}
+	</div>
+</main>
 
