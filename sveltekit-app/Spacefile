@@ -3,7 +3,7 @@ v: 0
 icon: ./icon.png
 app_name: cxntxct
 micros:
-  - name: sveltekit-app
+  - name: svelte-kit-app
     src: .
     engine: svelte-kit
     primary: true
